@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. --><project basedir="." default="build" name="MorenoOcchiuzzi">
+    <property environment="env"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="11"/>
+    <property name="source" value="11"/>
+    <path id="MorenoOcchiuzzi.classpath">
+        <pathelement location="bin"/>
+    </path>
+    <path id="run.Desafio3.classpath">
+        <path refid="MorenoOcchiuzzi.classpath"/>
+    </path>
+    <path id="run.ej1.classpath">
+        <path refid="MorenoOcchiuzzi.classpath"/>
+    </path>
+    <path id="run.ej10.classpath">
+        <path refid="MorenoOcchiuzzi.classpath"/>
+    </path>
+    <path id="run.ej11.classpath">
+        <path refid="MorenoOcchiuzzi.classpath"/>
+    </path>
+    <path id="run.ej12.classpath">
+        <path refid="MorenoOcchiuzzi.classpath"/>
+    </path>
+    <path id="run.ej13.classpath">
+        <path refid="MorenoOcchiuzzi.classpath"/>
+    </path>
+    <path id="run.ej14.classpath">
+        <path refid="MorenoOcchiuzzi.classpath"/>
+    </path>
+    <path id="run.ej2.classpath">
+        <path refid="MorenoOcchiuzzi.classpath"/>
+    </path>
+    <path id="run.ej4.classpath">
+        <path refid="MorenoOcchiuzzi.classpath"/>
+    </path>
+    <path id="run.ej5.classpath">
+        <path refid="MorenoOcchiuzzi.classpath"/>
+    </path>
+    <path id="run.ej6.classpath">
+        <path refid="MorenoOcchiuzzi.classpath"/>
+    </path>
+    <path id="run.Holamundo.classpath">
+        <path refid="MorenoOcchiuzzi.classpath"/>
+    </path>
+    <path id="run.ej15.classpath">
+        <path refid="MorenoOcchiuzzi.classpath"/>
+    </path>
+    <target name="init">
+        <mkdir dir="bin"/>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="src">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="clean">
+        <delete dir="bin"/>
+    </target>
+    <target depends="clean" name="cleanall"/>
+    <target depends="build-subprojects,build-project" name="build"/>
+    <target name="build-subprojects"/>
+    <target depends="init" name="build-project">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="bin" includeantruntime="false" source="${source}" target="${target}">
+            <src path="src"/>
+            <classpath refid="MorenoOcchiuzzi.classpath"/>
+        </javac>
+    </target>
+    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
+    <target description="copy Eclipse compiler jars to ant lib directory" name="init-eclipse-compiler">
+        <copy todir="${ant.library.dir}">
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </copy>
+        <unzip dest="${ant.library.dir}">
+            <patternset includes="jdtCompilerAdapter.jar"/>
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </unzip>
+    </target>
+    <target description="compile project with Eclipse compiler" name="build-eclipse-compiler">
+        <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
+        <antcall target="build"/>
+    </target>
+    <target name="Desafio3">
+        <java classname="ej3.Desafio3" failonerror="true" fork="yes">
+            <classpath refid="run.Desafio3.classpath"/>
+        </java>
+    </target>
+    <target name="ej1">
+        <java classname="ej1.ej1" failonerror="true" fork="yes">
+            <classpath refid="run.ej1.classpath"/>
+        </java>
+    </target>
+    <target name="ej10">
+        <java classname="ej10.ej10" failonerror="true" fork="yes">
+            <classpath refid="run.ej10.classpath"/>
+        </java>
+    </target>
+    <target name="ej11">
+        <java classname="ej11.ej11" failonerror="true" fork="yes">
+            <classpath refid="run.ej11.classpath"/>
+        </java>
+    </target>
+    <target name="ej12">
+        <java classname="ej12.ej12" failonerror="true" fork="yes">
+            <classpath refid="run.ej12.classpath"/>
+        </java>
+    </target>
+    <target name="ej13">
+        <java classname="ej13.ej13" failonerror="true" fork="yes">
+            <classpath refid="run.ej13.classpath"/>
+        </java>
+    </target>
+    <target name="ej14">
+        <java classname="ej14.ej14" failonerror="true" fork="yes">
+            <classpath refid="run.ej14.classpath"/>
+        </java>
+    </target>
+    <target name="ej2">
+        <java classname="ej2.ej2" failonerror="true" fork="yes">
+            <classpath refid="run.ej2.classpath"/>
+        </java>
+    </target>
+    <target name="ej4">
+        <java classname="ej4.ej4" failonerror="true" fork="yes">
+            <classpath refid="run.ej4.classpath"/>
+        </java>
+    </target>
+    <target name="ej5">
+        <java classname="ej5.ej5" failonerror="true" fork="yes">
+            <classpath refid="run.ej5.classpath"/>
+        </java>
+    </target>
+    <target name="ej6">
+        <java classname="ej6.ej6" failonerror="true" fork="yes">
+            <classpath refid="run.ej6.classpath"/>
+        </java>
+    </target>
+    <target name="Holamundo">
+        <java classname="Holamundo.Holamundo" failonerror="true" fork="yes">
+            <classpath refid="run.Holamundo.classpath"/>
+        </java>
+    </target>
+    <target name="ej15">
+        <java classname="ej15.ej15" failonerror="true" fork="yes">
+            <classpath refid="run.ej15.classpath"/>
+        </java>
+    </target>
+</project>
