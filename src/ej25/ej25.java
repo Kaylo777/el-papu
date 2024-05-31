@@ -8,19 +8,9 @@ public class ej25 {
 		
 		Scanner datos = new Scanner(System.in);
 		
-		String lolo = NO ;
+		String lolo  ;
 		boolean mar = false;
 		
-		do {
-			System.out.println("PA puedo salir con los bros SI o NO?");
-		;
-			
-			if (lolo == NO ) {
-				
-			}
-
-			
-		} while (i);
 		
 			
 		
