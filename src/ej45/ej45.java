@@ -21,19 +21,19 @@ public class ej45 {
 		
 		
 		System.out.println("el codigo de Enrique es: " + nums[0]);
-			Thread.sleep(20);
+			Thread.sleep(200);
 		System.out.println("el codigo de Liliana es: " + nums[1]);		
-			Thread.sleep(20);
+			Thread.sleep(200);
 		System.out.println("el codigo de Lucas es: " + nums[2]);
-			Thread.sleep(20);
+			Thread.sleep(200);
 		System.out.println("el codigo de  Juan es:" + nums[3]);
-			Thread.sleep(20);
+			Thread.sleep(200);
 		System.out.println("el codigo de Fiorella es: " + nums[4]);
-			Thread.sleep(20);
+			Thread.sleep(200);
 		System.out.println("el codigo de Ariel es: " + nums[5]);
-			Thread.sleep(20);
+			Thread.sleep(200);
 		System.out.println("el codigo de  Daiana es: " + nums[6]);
-			Thread.sleep(20);
+			Thread.sleep(200);
 		
 
 	}
