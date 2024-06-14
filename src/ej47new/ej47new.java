@@ -1,10 +1,10 @@
-package ej47;
+package ej47new;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class ej47 {
+public class ej47new {
 
 	public static void main(String[] args) {
 
