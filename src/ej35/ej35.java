@@ -1,5 +1,6 @@
 package ej35;
 
+import java.util.Iterator;
 import java.util.Scanner;
 
 public class ej35 {
@@ -8,6 +9,8 @@ public class ej35 {
 	
 		int i, notamin = 9999, notamax = -9999;
 		
+		
+			
 		
  }
 }
