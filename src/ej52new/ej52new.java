@@ -1,6 +1,9 @@
 package ej52new;
 
 import java.util.Scanner;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashSet;
 
 public class ej52new {
 	

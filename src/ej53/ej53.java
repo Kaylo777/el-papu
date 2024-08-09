@@ -1,43 +1,50 @@
 package ej53;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class ej53 {
 	
 	static Scanner datos = new Scanner (System.in);
-	static int notamin = 9999, notamax = -9999;
-	static int nota1;
-	static int nota2;
-	static int nota3;
-	static int nota4;
-	static int nota5;
+	static ArrayList<Integer> nota = new ArrayList<>();
 	
-	public static void Ingreso_de_notas() {
-		System.out.println("ingre la primara nota");
-		nota1 = datos.nextInt();
-		System.out.println("Ahora ingre la segunda nota");
-		nota2 = datos.nextInt();
-		System.out.println("La tercera nota");
-		nota3 = datos.nextInt();
-		System.out.println("La cuarta nota");
-		nota4 = datos.nextInt();
-		System.out.println("Y por ultimo la quinta");
-		nota5 = datos.nextInt();
+	
+	public static void IngresoDeNotas() {
+		int cantidad = 5;
+		for (int i = 0; i < cantidad; i++) {
+			System.out.println("ingrese las notas");
+			nota.add(datos.nextInt());
+			
+		}	
 	}
+		
+	
 	public static void SumaDeNotas() {
-		int suma;
+		int suma = 0;
 		int divi;
-		suma = nota1 + nota2 + nota3 + nota4 + nota5;
-		divi = suma / 5;
-		System.out.println("este fue el promedio de las nota:\n " + divi);
+		for (int i = 0; i < nota.size(); i++) {
+			suma += nota.get(i);
+			
+		}
+		divi = suma/5 ;
+		
+		System.out.println("este fue el promedio de las nota:\n" + divi);
+		
+		for (int i = 0; i < nota.size() - 1; i++) {
+		    for (int j = 0; j < nota.size() - i - 1; j++) {
+		        if (nota.get(j) > nota.get(j + 1)) {
+		            // Intercambiar elementos
+		            int temp = nota.get(j);
+		            nota.set(j, nota.get(j + 1));
+		            nota.set(j + 1, temp);
+		        }
+		    }
+		}
+		System.out.println("estas son las notas ordenadas \n" + nota);
+		
 	}
-	
-	
-	
-	
-
 	public static void main(String[] args) {
-		Ingreso_de_notas();
+		IngresoDeNotas(); 
 		SumaDeNotas();
 	}
 
