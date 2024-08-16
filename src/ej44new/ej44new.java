@@ -1,10 +1,10 @@
-package ej44N;
+package ej44new;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.Scanner;
 
-public class ej44N {
+public class ej44new {
 
 	public static void main(String[] args) {
 		ArrayList<String> equipo = new ArrayList<>();
